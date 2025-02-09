@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url('https://static.vecteezy.com/system/resources/previews/002/064/744/large_2x/abstract-polygonal-pattern-luxury-golden-line-with-dark-blue-template-background-premium-style-for-poster-cover-print-artwork-illustration-vector.jpg');
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    fill-opacity: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color:#777;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: black;
+    border-radius: 10px;
+    border-color: bisque;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem ;
+    transition: transform 0.3s ease;
+}
+
+
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color:antiquewhite;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+
+.team-member:hover {
+            transform: scale(1.05);
+            background-color: #e0e0e0;
+        }
+        .team-member:hover .info {
+            opacity: 1;
+        }
+
+
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+      <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/10/logo.svg" alt="ZONIFY Logo"> 
+      <nav>
+          <ul>
+              <li><a href="homepage.html">HOME</a></li>
+              <li><a href="upcomingevents.html">UPCOMING EVENTS</a></li>
+          </ul>
+      </nav>
+  
+    </header>
+    <section id="about">
+        <div class="container">
+            <h1 style="color:aliceblue;">About Us</h1>
+            <p>"We're a team of Computer Science and Engineering students who just completed an exciting project: building a website together. Each of us brought unique skills to the table, and by collaborating effectively, we created a user-friendly platform.
+              <br>This project was an incredible opportunity for us to apply what we've learned in a real-world setting and experience the power of teamwork in web development."
+          </p>
+            <div class="team">
+                <div class="team-member">
+                   
+                    <h3>Tanusha Musunuru</h3>
+                    <p>23030</p>
+                </div>
+                <div class="team-member">
+                  
+                    <h3>Keerthi Nakka</h3>
+                    <p>23032</p>
+                </div>
+                <div class="team-member">
+                    
+                    <h3>Srujitha cherukuri</h3>
+                    <p>23045</p>
+                </div>
+                <div class="team-member">
+                    
+                  <h3>VIshnu Priya</h3>
+                  <p>23047</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 ZONIFY. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zonify  |  Campus Hub </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content1 {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            position: relative;
+            height: 80vh; /* Changed height to 80vh */
+            padding-top: 60px; /* Adjust padding to prevent content from hiding behind the fixed header */
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .box {
+            width: 45%;
+            height: 350px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            box-sizing: border-box;
+            vertical-align: top;
+            color: white;
+            border-radius: 7px;
+            font-weight: bold;
+            line-height: 1.5em;
+        }
+
+      
+        .bottom-right {
+            bottom: 90px;
+            right: 50px;
+        }
+
+        p {
+            padding: 5px;
+            font-size: 17px;
+        }
+
+        #about {
+          
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+#clubs {
+margin-top:0;
+    overflow-y: auto; 
+    display: flex;
+    height: 100vh; 
+    
+}
+#a {
+font-size : 40px;
+font-weight :40PX;
+color:white; 
+text-align:left;
+margin:40px;
+}
+#b{
+color:white; 
+text-align:left;
+margin:40px;
+font-family: Arial, sans-serif;
+line-height: 1.5em;
+font-weight :bolder; 
+}
+table {
+            margin:40px;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+color:white;
+            border: 2px solid #FAF9F6;
+            padding: 10px;
+            text-align: center;
+        }
+.gem-container {
+        max-width: 600px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gem {
+        width: calc(33.33% - 60px);
+        height: 180px;
+        border: 2px solid #333;
+        margin: 10px;
+        box-sizing: border-box;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+background-color: black;
+    }
+
+    .gem img {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: black;
+    }
+
+    .gem:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .gem:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .gem-name {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+color:white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="sportsclub.html">Sports</a></li>
+                <li><a href="upcomingevents.html">Upcoming Events</a></li>
+
+            </ul>
+        </nav>
+    </header>
+ <section id="about">
+    <div id="background" class="background"></div>
+    <div class="content">
+        <h1 style="font-weight:900; font-size:30px;">CAMPUS LIFE</h1>
+        <p style="font-weight:500;">A HOME AWAY FROM HOME !</p>
+    </div>
+   
+
+        <div class="box bottom-right" style="height: 400px;">
+            <br>
+            <h1  style="font-weight:750; margin-left:10px;"> WHAT IS ZONIFY ? </h1>
+         
+            <p> Here, we unite all the vibrant clubs under one roof, creating a melting pot of ideas, passions, and activities. Whether you’re an artist, a techie, a debater, or an athlete, this is your one-stop destination to connect, collaborate, and celebrate the diverse interests that thrive in our academic community. Dive into the heart of campus culture and discover your next adventure with us! </p>
+        </div>
+</section>
+<br>
+<br>
+
+
+    <section id="clubs">
+        <div style=" width:100%; border-radius:20px;  background: rgba(0, 0, 0, 0.5);">
+            <h1 id="a">Student Clubs : </h1>
+            <p id="b"> AVV provides numerous opportunities for students to pursue their passions in areas other than academics. More than 7 clubs on campus help students engage in diverse interests and activities that enrich their social, cultural, and educational experiences. The classroom experience is thus fruitfully supplemented by opportunities for aesthetic appreciation and social value. </p>
+    <table >
+        <tr>
+            <th colspan="2">Coding</th>
+         <th colspan="3">Cultural</th>
+      </tr>
+            <td>Anvesh</td>
+            <td>Prachurya</td>
+        
+          
+        
+            <td>Advika</td>
+            <td>Nrtya Sparsh</td>
+            <td>Sapta Swara</td>
+        </tr>
+</table>
+
+<p id="b"> Explore our diverse range of clubs, from literature and photography to multimedia. There's something for everyone to enjoy and discover! </p>
+<table>
+        <tr>
+            <th >Literature</th>
+         <th >Multi media</th>
+          <th >Photography</th>
+      </tr>
+      <tr>
+            <td>Avinya</td>
+            <td>Drsya</td>
+            <td>Chitra</td>
+           
+        </tr>
+</table>
+        </div>
+</section>
+<section>
+<div> 
+<div class="gem-container">
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="avinya.html" target="_self">
+        <img src="09.jpg" alt="Avinya">
+        <div class="gem-name">Avinya</div>
+    </div> </a>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="anvesh.html" target="_self">
+        <img src="08.jpg"  alt="Anvesh">
+        <div class="gem-name">Anvesh</div> </a>
+    </div>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="advika.html" target="_self">
+        <img src="010.jpg" alt="Advika">
+        <div class="gem-name">Advika</div>
+    </div></a>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="nrtya.html" target="_self">
+        <img src="02.jpg" alt="Nrtya Sparsh">
+        <div class="gem-name">Nrtya Sparsh</div></a>
+    </div>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="sapthaswara.html" target="_self">
+        <img src="03.jpg" alt="Saptaswara">
+        <div class="gem-name">Saptaswara</div>
+    </div> </a>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="drsya.html" target="_self">
+        <img src="01.png" alt="Drsya">
+        <div class="gem-name">Drsya</div> </a>
+    </div>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="chitra.html" target="_self">
+        <img src="07.jpg" alt="Chitra">
+        <div class="gem-name">Chitra</div></a>
+    </div>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="prachurya.html" target="_self">
+        <img src="06.jpg" alt="Prachurya">
+        <div class="gem-name">Prachurya</div> </a>
+    </div>
+    <div class="gem">
+        <a style="color:aliceblue; text-decoration: none;" href="raksha.html" target="_self">
+        <img src="04.jpg" alt="Raksha">
+        <div class="gem-name">Raksha</div> </a>
+    </div>
+
+</div>
+</div>
+    </section>
+    <script>
+        const backgrounds = [
+            'https://s3.eu-central-1.amazonaws.com/cdn.pixend.de/CQYDNRZ9Q8QSS8D/page/0178578221889662149132421_8365740962764658109235891.jpeg',
+            'https://s3.eu-central-1.amazonaws.com/cdn.pixend.de/CQYDNRZ9Q8QSS8D/page/0256255386896955244475049_5313947963190597669943016.jpeg',
+            'https://s3.eu-central-1.amazonaws.com/cdn.pixend.de/CQYDNRZ9Q8QSS8D/page/4341471925794019165255502_0076429342179737089267432.jpeg',
+            'https://s3.eu-central-1.amazonaws.com/cdn.pixend.de/CQYDNRZ9Q8QSS8D/page/0178578221889662149132421_8365740962764658109235891.jpeg',
+            'https://s3.eu-central-1.amazonaws.com/cdn.pixend.de/CQYDNRZ9Q8QSS8D/page/0256255386896955244475049_5313947963190597669943016.jpeg'
+        ];
+        let index = 0;
+        const backgroundElement = document.getElementById('background');
+
+        function changeBackground() {
+           
+
+            index = (index + 1) % backgrounds.length;
+            backgroundElement.style.backgroundImage = `url('${backgrounds[index]}')`;
+        }
+
+        // Preload images
+        backgrounds.forEach(imageUrl => {
+            const img = new Image();
+            img.src = imageUrl;
+        });
+
+        // Initial call
+        changeBackground();
+
+        // Periodically change background
+        setInterval(changeBackground, 2000); // Change the interval as needed (in milliseconds)
+    </script>
+</body>
+</html>

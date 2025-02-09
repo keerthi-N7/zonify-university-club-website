@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Club</title>
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+background-image: url('https://th.bing.com/th/id/OIP.T88QxdLfyaJH7pUNEZSlFQHaHa?w=175&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7');
+        
+            background-repeat:no-repeat;   
+  background-size: 100%;
+  background-blend-mode: lighten; 
+  background-attachment: fixed;
+        }
+        }
+    
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #555;
+            padding: 0.5em;
+
+        }
+        nav a {
+            color: white;
+            padding: 0.5em 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #444;
+        }
+        .container {
+            padding: 2em;
+        }
+        .sports {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .sport-box {
+            background: white;
+            border: 1px solid #ddd;
+            width: 30%;
+            margin-bottom: 2em;
+            padding: 1em;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sport-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .sport-box h3 {
+            text-align: center;
+        }
+        .sport-box .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;
+            justify-content: center;
+        }
+        .sport-box .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+        .sport-box .gallery img:hover {
+            border: 2px solid #333;
+        }
+        .sport-box .register {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+        }
+        .sport-box .register button {
+            background: #333;
+            color: white;
+            padding: 0.5em 1em;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s ease;
+        }
+        .sport-box .register button:hover {
+            background: #555;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.25);
+        }
+        .modal-content h2 {
+            margin-top: 0;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header style="margin-top:30px;">
+   
+
+
+<nav >
+    <a href="homepage.html" style="margin-left:1000px;">Home</a>
+    <a href="gallery.html">Gallery</a>
+
+</nav>
+
+</header>
+
+<div class="container">
+    <section id="sports">
+        <h2 style="color:white;">Sports</h2>
+        <div class="sports">
+            <div class="sport-box" id="sport1">
+                <h3>Basketball</h3>
+                <div class="gallery" id="gallery1"></div>
+                <div class="register">
+                    <button onclick="registerSport('Basketball')">Register</button>
+                </div>
+            </div>
+            <div class="sport-box" id="sport2">
+                <h3>Football</h3>
+                <div class="gallery" id="gallery2"></div>
+                <div class="register">
+                    <button onclick="registerSport('Football')">Register</button>
+                </div>
+            </div>
+            <div class="sport-box" id="sport3">
+                <h3>Throwball</h3>
+                <div class="gallery" id="gallery3"></div>
+                <div class="register">
+                    <button onclick="registerSport('Baseball')">Register</button>
+                </div>
+            </div>
+            <div class="sport-box" id="sport4">
+                <h3>HandBall</h3>
+                <div class="gallery" id="gallery4"></div>
+                <div class="register">
+                    <button onclick="registerSport('Soccer')">Register</button>
+                </div>
+            </div>
+            <div class="sport-box" id="sport5">
+                <h3>Tennis</h3>
+                <div class="gallery" id="gallery5"></div>
+                <div class="register">
+                    <button onclick="registerSport('Tennis')">Register</button>
+                </div>
+            </div>
+            <div class="sport-box" id="sport6">
+                <h3>Cricket</h3>
+                <div class="gallery" id="gallery6"></div>
+                <div class="register">
+                    <button onclick="registerSport('Swimming')">Register</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Register for <span id="sportName"></span></h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function registerSport(sport) {
+        document.getElementById('sportName').textContent = sport;
+        document.getElementById('registerModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('registerModal').style.display = 'none';
+    }
+
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('You have registered for ' + document.getElementById('sportName').textContent);
+        closeModal();
+    });
+</script>
+
+</body>
+</html>

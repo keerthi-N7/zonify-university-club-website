@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: rgb(23,30,56);
+        padding: 10px 0;
+        color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
+   
+   
+}
+    
+    
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+    
+    
+    /* Main Content */
+    main {
+        padding: 20px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 40px;
+    }
+    
+    .club-events {
+        margin-bottom: 50px;
+    }
+    
+    .club-title {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .events-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        
+    }
+    
+    .event {
+        background-color: #333;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .event:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .event-title {
+        font-size: 20px;
+         color: #fff;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    .event-title::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 40px;
+        height: 4px;
+        background-color: #a8afb7;
+    }
+    
+    .event-date {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    
+    .event-description {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.6;
+    }
+    .image{
+        color:antiquewhite;
+        text-align: center;
+        align-items: center;
+       }
+       .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:rgb(245, 248, 250); 
+        font-size: 24px;
+        font-family:Arial, Helvetica, sans-serif; 
+        text-align: center; 
+        
+    }
+    nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+    </style>
+<body>
+    <header>
+        <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2023/10/logo.svg" alt="ZONIFY Logo"> 
+        <nav>
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+               
+             
+            </ul>
+        </nav>
+    </header>
+    <div  style="background-image: url( https://www.hardwarefield.com/wp-content/uploads/2020/08/design-an-attractive-background-for-your-website.jpg);" class="container">
+        <img  class="image" src="https://webfiles.amrita.edu/2022/06/amrita-amaravati-campus-menu-updated.png" height="400" width="800" style="padding-left: 350px; padding-top: 180px;">
+        <div  class="text"><h1 style="color:aliceblue; padding-left: 350px; padding-top: 350px;">E V E N T S<br> O N <br> C A M P U S</h1></div>
+    <main>
+        <div class="container">
+            <h1>Upcoming Events</h1>
+            <section class="club-events">
+                <h2 class="club-title">Coding clubs </h2>
+                <div class="events-grid">
+                    <div class="event">
+                        <h3 class="event-title">Anvesh</h3>
+                        <p class="event-date">Date: 20th February 2024 </p>
+                        <p class="event-description">We're thrilled to announce the ultimate showdown: the 2-D Game Hackathon at Amrita Amaravati!.</p>
+                    </div>
+                    <div class="event">
+                        <h3 class="event-title">Prachurya</h3>
+                        <p class="event-date">Date: 24th February 2024</p>
+                        <p class="event-description">Talent Search Update! Event: Incident Response.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="club-events">
+                <h2 class="club-title">Cultural Clubs</h2>
+                <div class="events-grid">
+                    <div class="event">
+                        <h3 class="event-title">Advika</h3>
+                        <p class="event-date">Date: 24th February 2024</p>
+                        <p class="event-description">I am thrilled to extend a gracious invitation to you for an exquisite celebration of artistry and tradition at the "Mehendi Muse" Talent Search event, graciously presented by Advika.</p>
+                    </div>
+                    <div class="event">
+                        <h3 class="event-title">Nitya Sparsh</h3>
+                        <p class="event-date">Date: 24th February 2024</p>
+                        <p class="event-description">NrityaSparsh is excited to announce our upcoming event, "Dance Fiesta" , a vibrant Talent Search that promises to showcase the diverse dance talents within our student community.</p>
+                    </div>
+                    <div class="event">
+                        <h3 class="event-title">Sapta Swara</h3>
+                        <p class="event-date">Date: 23rd February 2024</p>
+                        <p class="event-description">You're invited to a magical music event hosted by Team Saptaswara! Join us to have a musical evening.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="club-events">
+                <h2 class="club-title">Other Clubs</h2>
+                <div class="events-grid">
+                    <div class="event">
+                        <h3 class="event-title">Drishya</h3>
+                        <p class="event-date">Date: 23rd February 2024</p>
+                        <p class="event-description">You are invited to our Upcoming Event where you will feel both entertaining and enlightening – our Short Film Event..</p>
+                    </div>
+                    <div class="event">
+                        <h3 class="event-title">Avinya</h3>
+                        <p class="event-date">Date: 24th February 2024</p>
+                        <p class="event-description">Calling All Bookworms! Join Avinya's Book Review Competition.</p>
+                    </div>
+                    <div class="event">
+                        <h3 class="event-title">Chitra</h3>
+                        <p class="event-date">Date: 24th February 2024</p>
+                        <p class="event-description"> Chitra Club is thrilled to announce a series of talent-search events designed just for you! </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="gallery">
+            <h1 style="color:aliceblue; text-align: center;" >GALLERY </h1><br><br><br>
+            <div class="gallery-item"><img src="pic1.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="pic2.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="pic3.jpg" alt="Image 3"></div>
+            <div class="gallery-item"><img src="pic4.jpg" alt="Image 4"></div>
+            <div class="gallery-item"><img src="pic5.jpg" alt="Image 5"></div>
+            <div class="gallery-item"><img src="pic6.jpg" alt="Image 6"></div>
+            <div class="gallery-item"><img src="pic7.jpg" alt="Image 7"></div>
+           
+            <div class="gallery-item"><img src="pic8.jpg" alt="Image 8"></div>
+        </div>
+    </main>
+</body>
+</html>

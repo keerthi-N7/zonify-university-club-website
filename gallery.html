@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+h1 {
+  color: coral;
+}
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  div {
+    width: 150px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+    &:hover img {
+      filter: grayscale(0);
+    }
+    &:hover {
+      border-color: coral;
+    }
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+    }
+    p {
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}
+
+
+
+
+</style>
+<body>
+
+
+<h1>GALLERY</h1>
+<div class="grid-container">
+  <div>
+    <img class='grid-item grid-item-1' src='https://st3.depositphotos.com/14115800/16832/i/450/depositphotos_168326160-stock-photo-basketball-player-makes-slam-dunk.jpg' alt=''>
+    <p>"BASKETBALL!"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-2' src='https://media.istockphoto.com/id/872676564/photo/girl-playing-cricket.jpg?s=612x612&w=0&k=20&c=_RZrfS0ZhMNIzhmwo7wud7oCN4DimHBLYirGMUsennE=' alt=''>
+    <p>"CRICKET."</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-3' src='https://c0.wallpaperflare.com/preview/168/313/215/human-person-people-sphere.jpg'alt=''>
+    <p>"THROWBALL"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-4' src='https://cdn.britannica.com/51/190751-131-B431C216/soccer-ball-goal.jpg'alt=''>
+    <p>"FOOTBALL"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-5' src='https://ss-i.thgim.com/public/incoming/bej4t/article65966857.ece/alternates/FREE_1200/Handball.jpg'alt=''>
+    <p>"Are you gunna throw the ball?"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-6' src='https://www.racquetpoint.com/cdn/shop/articles/what-is-badminton-racquet-point.jpg?v=1654120169' alt=''>
+    <p>"C'mon friend!"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-7' src='https://thebridge.in/wp-content/uploads/2018/08/carrom-header-2.jpg' alt=''>
+    <p>"CARROMS!"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-8' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTblHgrTyQK_puN-BaEmUfuqa0j5VTvdyM8NA&s' alt=''>
+    <p>"You gunna finish that?"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-9' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ckPjFAeZU9voAXplEgufF2puvFDUegiVcw&s' alt=''>
+    <p>"We can PLAY E-GAMES!"</p>
+  </div>
+  <div>
+    <img class='grid-item grid-item-10' src='https://image.cnbcfm.com/api/v1/image/105413464-1535052333316gettyimages-1006425742.jpeg?v=1561563915&w=1600&h=900' alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+
+</div>
+</body>
